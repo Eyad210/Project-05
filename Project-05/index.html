@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+<!--for the Poppins font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+
+<link rel="stylesheet" href="stylesheet.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!--holds the page left and right components-->
+  <div class="page">
+    <!--holds the left components of the page-->
+    <div class="left">
+      <h1>Learn to code by <br>
+        watching others</h1>
+      <p>See how experienced developers solve problems in real-time.<br>
+         Watching scripted tutorials is great, 
+        but understanding how <br>developers think is invaluable.</p> 
+    </div>
+    <!--holds the right components of the page-->
+    <div class="right">
+      <p id="paragraph"><a href="#first">Try it free 7 days</a> <span id="weight">then $20/mo. thereafter</span></p>
+      <!--the form container-->
+      <div class="form">
+        <div id="insideForm">
+          <form id="checkInformation">
+            <input type="text" name="firstName" placeholder="First Name" class="input" id="first"><br>
+            <p class="inputPar" id="firstName"></p>
+            <input type="text" name="lastName" placeholder="Last Name" class="input" id="last"><br>
+            <p class="inputPar" id="lastName"></p>
+            <input type="text" name="email" placeholder="Email Address" class="input" id="em"><br>
+            <p class="inputPar" id="email"></p>
+            <input type="password" minlength="8" name="password" placeholder="Password" class="input" id="pass"><br>
+            <p class="inputPar" id="password"></p>
+            <input type="submit" value="CLAIM YOUR FREE TRIAL" id="submit" class="input"><br>
+          </form>
+          <p><small>By clicking the button, you are agreeing to our <a href="#" id="terms">Terms and Services</a></small></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="checkInfo.js"></script>
+</body>
+</html>
